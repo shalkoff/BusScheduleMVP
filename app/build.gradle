@@ -4,7 +4,7 @@ android {
     compileSdkVersion 25
     buildToolsVersion "25.0.2"
     defaultConfig {
-        applicationId "shalk_off.raspisanie.bus.ru.raspisanie_bus"
+        applicationId "ru.bus.raspisanie.shalk_off.raspisanie_bus"
         minSdkVersion 15
         targetSdkVersion 25
         versionCode 1
@@ -26,4 +26,19 @@ dependencies {
     })
     compile 'com.android.support:appcompat-v7:25.0.1'
     testCompile 'junit:junit:4.12'
+
+    compile 'com.android.support:design:25.0.1'
+
+    // RX
+    compile "io.reactivex:rxjava:1.1.7"
+    compile "io.reactivex:rxandroid:1.2.1"
+
+    //Retrofit
+    compile 'com.squareup.retrofit2:retrofit:2.1.0'
+    compile 'com.squareup.retrofit2:converter-gson:2.1.0'
+    compile 'com.squareup.retrofit2:adapter-rxjava:2.1.0'
+    compile 'com.squareup.okhttp3:logging-interceptor:3.3.0'
+
+    // GSON
+    compile "com.google.code.gson:gson:2.7"
 }
