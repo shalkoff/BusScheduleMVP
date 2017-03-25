@@ -5,6 +5,10 @@ package ru.bus.raspisanie.shalk_off.raspisanie_bus.util;
  */
 
 public class Const {
+
+    // Базовый URL
+    public static final String BASE_URL = "http://serverman4ik.myarena.ru/";
+
     // Теги Фрагменты
     public static final String MAIN_FRAGMENT = "mainFragment";
     public static final String FARE_FRAGMENT = "fareFragment";
