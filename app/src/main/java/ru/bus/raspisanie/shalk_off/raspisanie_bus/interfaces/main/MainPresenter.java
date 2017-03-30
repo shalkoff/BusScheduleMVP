@@ -1,6 +1,9 @@
 package ru.bus.raspisanie.shalk_off.raspisanie_bus.interfaces.main;
 
+import java.util.List;
+
 import ru.bus.raspisanie.shalk_off.raspisanie_bus.model.response.ResponseSchedule;
+import ru.bus.raspisanie.shalk_off.raspisanie_bus.model.response.Schedule;
 import rx.Observable;
 
 /**
@@ -9,7 +12,7 @@ import rx.Observable;
 
 public interface MainPresenter {
 
-    void showResultPresenter(Observable<ResponseSchedule> result);
+    void showResultPresenter(List<Schedule> result);
     void showError(String error);
     void getSchedule();
     void destroyFragment();

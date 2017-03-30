@@ -24,10 +24,10 @@ dependencies {
     androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
-    compile 'com.android.support:appcompat-v7:25.3.0'
+    compile 'com.android.support:appcompat-v7:25.3.1'
     testCompile 'junit:junit:4.12'
 
-    compile 'com.android.support:design:25.3.0'
+    compile 'com.android.support:design:25.3.1'
 
     // RX
     compile "io.reactivex:rxjava:1.1.7"
@@ -41,4 +41,10 @@ dependencies {
 
     // GSON
     compile "com.google.code.gson:gson:2.7"
+
+    //FareBase
+    compile 'com.google.firebase:firebase-messaging:10.2.0'
+
+    // ORMLite
+    compile 'com.j256.ormlite:ormlite-android:4.48'
 }

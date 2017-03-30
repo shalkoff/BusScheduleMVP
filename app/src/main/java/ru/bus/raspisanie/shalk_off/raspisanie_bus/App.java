@@ -10,6 +10,7 @@ import retrofit2.Retrofit;
 import retrofit2.adapter.rxjava.RxJavaCallAdapterFactory;
 import retrofit2.converter.gson.GsonConverterFactory;
 import ru.bus.raspisanie.shalk_off.raspisanie_bus.api.APIService;
+import ru.bus.raspisanie.shalk_off.raspisanie_bus.db.DBHelper;
 import ru.bus.raspisanie.shalk_off.raspisanie_bus.util.Const;
 
 /**
@@ -20,6 +21,11 @@ public class App extends Application {
 
     private static Retrofit retrofitSchedule;
     private static APIService service;
+    private static DBHelper helper;
+
+    public static DBHelper getHelper() {
+        return helper;
+    }
 
     private static void initRetrofit() {
         retrofitSchedule = new retrofit2.Retrofit.Builder()
@@ -48,6 +54,7 @@ public class App extends Application {
 
     @Override
     public void onCreate() {
+        helper = new DBHelper(getApplicationContext()); // Создание объекта helper
         initRetrofit(); // Инициализация Retrofit
     }
 }

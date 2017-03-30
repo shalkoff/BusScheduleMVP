@@ -14,6 +14,8 @@ import java.util.List;
 import ru.bus.raspisanie.shalk_off.raspisanie_bus.R;
 import ru.bus.raspisanie.shalk_off.raspisanie_bus.interfaces.main.MainPresenter;
 import ru.bus.raspisanie.shalk_off.raspisanie_bus.interfaces.main.MainView;
+import ru.bus.raspisanie.shalk_off.raspisanie_bus.model.response.ResponseSchedule;
+import ru.bus.raspisanie.shalk_off.raspisanie_bus.model.response.Schedule;
 import ru.bus.raspisanie.shalk_off.raspisanie_bus.presenters.MainPresenterImpl;
 import ru.bus.raspisanie.shalk_off.raspisanie_bus.ui.base.BaseFragment;
 
@@ -62,8 +64,9 @@ public class MainFragment extends BaseFragment implements MainView {
     }
 
     @Override
-    public void showResult(List<Object> result) {
+    public void showResult(List<Schedule> result) {
         // Тут получаем исходные данные и заполняем Recycler
+        result.size();
     }
 
 }

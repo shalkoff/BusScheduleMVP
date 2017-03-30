@@ -7,4 +7,5 @@ package ru.bus.raspisanie.shalk_off.raspisanie_bus.interfaces.main;
 public interface MainInteractor {
 
     void getScheduleInteractor();
+    void destroyFragmentInteractor();
 }
